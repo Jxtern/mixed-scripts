@@ -43,7 +43,7 @@ def get_midi_length(file_path):
         print(f"Error reading MIDI file: {e}")
         return None
 
-file_path = 'supposedly the longest midi.mid'  # midi path however has to be inside the midi folder
+file_path = 'supposedly the longest midi.mid'  # midi path, script has to be inside the midi folder and then the name of the midi
 length = get_midi_length(file_path)
 if length:
     print(f"MIDI Length: {length['seconds']} seconds ({length['minutes']} minutes, {length['hours']} hours, {length['days']} days, {length['years']} years)")
